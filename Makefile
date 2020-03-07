@@ -17,5 +17,5 @@ uninstall:
 	@rm -f $(INSTALL_PATH)/bin/setup-files
 
 clean_all:
-	@echo Removing ${current_dir} ...
-	@sudo rm -rf ${current_dir}
+	@echo Removing ${CUR_DIR} ...
+	@sudo rm -rf ${CUR_DIR}
