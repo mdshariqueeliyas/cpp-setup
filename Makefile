@@ -13,8 +13,8 @@ install:
 
 uninstall:
 	@echo '***	Uninstalling compile-run and setup-files'
-	@rm -f $(INSTALL_PATH)/bin/compile-run
-	@rm -f $(INSTALL_PATH)/bin/setup-files
+	@sudo rm -f $(INSTALL_PATH)/bin/compile-run
+	@sudo rm -f $(INSTALL_PATH)/bin/setup-files
 
 clean_all:
 	@echo Removing ${CUR_DIR} ...
