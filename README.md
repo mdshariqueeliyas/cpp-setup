@@ -5,4 +5,6 @@ cpp-setup is command line tool for competitive programmers to generate c++ file 
 ## How to install?
 copy paste following command in terminal
 
-```wget https://github.com/mdshariqueeliyas/cpp-setup.git && cd cpp-setup && make install```
+```git clone https://github.com/mdshariqueeliyas/cpp-setup.git && cd cpp-setup && sudo make install```
+
+run ```sudo make clean_all``` to clean directory

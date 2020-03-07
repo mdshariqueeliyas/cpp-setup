@@ -42,7 +42,7 @@ compile_and_run() {
     g++ $CPPFILE -o $CPPFILENAME".exe" &&
     echo "Running " $CPPFILENAME".exe ..." &&
     ./$CPPFILENAME".exe" < $CPPFILENAME".in" > $CPPFILENAME".out" &&
-    echo "OUTPUT :\n" &&
+    echo "OUTPUT :" &&
     cat $CPPFILENAME".out"
 }
 compile_and_run

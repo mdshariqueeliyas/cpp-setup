@@ -1,6 +1,7 @@
 # Makefile
 
 INSTALL_PATH = /usr/local
+CUR_DIR = $(shell pwd)
 
 all: install
 
@@ -11,6 +12,10 @@ install:
 	@install -c -m 755 setup_files.sh $(INSTALL_PATH)/bin/setup-files
 
 uninstall:
-	@echo '***	Uninstalling compile-run and setup-files
+	@echo '***	Uninstalling compile-run and setup-files'
 	@rm -f $(INSTALL_PATH)/bin/compile-run
 	@rm -f $(INSTALL_PATH)/bin/setup-files
+
+clean_all:
+	@echo Removing ${current_dir} ...
+	@sudo rm -rf ${current_dir}
